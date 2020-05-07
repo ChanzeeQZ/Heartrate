@@ -1,6 +1,10 @@
 # HeartRate
 > 调研报告：基于光电传感器技术的心率/脉率检测方法研究<br>
+<head>
+    <base target="_blank" />
+</head>
 一个Arduino为微处理器的心率检测仪，传感器为光电传感器，实时显示心率。<br>
+
 # 基于光电传感器的心率/脉率检测方法研究
 ## 基本原理
 ### 光电转化原理
@@ -31,7 +35,7 @@
 
 # 参考
 1. [Pulse sersor][sersor]<br>
-2. <a herf="https://www.tinkercad.com/" title="Arduino仿真" target="_black">TINKERCAD</a><br>
+2. <a herf="https://www.tinkercad.com/" title="Arduino仿真" target="_blank">TINKERCAD</a><br>
 
 # 测量仪器设计拓展
 ## 一般结构
