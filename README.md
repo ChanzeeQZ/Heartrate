@@ -35,7 +35,7 @@
 
 # 参考
 1. [Pulse sersor][sersor]<br>
-2. <a herf="https://www.tinkercad.com/" title="Arduino仿真" target="_blank">TINKERCAD</a><br>
+2. <a herf="https://www.tinkercad.com/">TINKERCAD</a><br>
 
 # 测量仪器设计拓展
 ## 一般结构
