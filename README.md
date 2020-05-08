@@ -18,6 +18,12 @@
 ## 项目设计方案
 基于光电传感器，小型便携家用心率测量，使用三个七段数码管显示。（戒指/指套？太小可能实现不了）<br>
 肤色不同、手指粗细不同，绿光与红光的区别，光电容积法PPG<br>
+光电传感器采集到的原始心率信号极其微弱（变化幅值在＋10mV之间）<br>
+信号采集电路：
+放大电路：
+滤波电路：
+中央处理器电路：
+显示电路：
 
 ## 系统结构设计
 
@@ -33,7 +39,12 @@
 
 # 参考
 1. [Pulse sersor][sersor]<br>
-2. <a href="https://www.tinkercad.com/" title="Arduino仿真" target="_blank">TINKERCAD</a><br>
+2. [TINKERCAD][tinkercad]<br>
+3. [proteus仿真arduino中使用PCF8574以I2C方式操作LCD1602][xiHe]
+4. [手指检测心跳设计——传感器制作篇][shouZhi]
+5. [基于uFUN开发板的心率计（一）DMA方式获取传感器数据][wangchao1]
+6. [基于uFUN开发板的心率计（二）动态阈值算法获取心率值][wangchao2]
+7. [基于uFUN开发板的心率计（三）Qt上位机的实现][wangchao3]
 
 # 测量仪器设计拓展
 ## 一般结构
@@ -57,3 +68,8 @@
 [PPG]:https://www.cdstm.cn/gallery/media/mkjx/wxd/201605/t20160525_321684.html "光电容积法"
 [sersor]:https://pulsesensor.com/ "光电传感器模块"
 [tinkercad]:https://www.tinkercad.com/ "Arduino仿真"
+[xiHe]:https://blog.csdn.net/haigear/article/details/88935697 "proteus仿真arduino中使用PCF8574以I2C方式操作LCD1602"
+[shouZhi]:https://blog.csdn.net/qq_34445388/article/details/79781181/ "手指检测心跳设计——传感器制作篇"
+[wangchao1]:http://www.wangchaochao.top/2019/03/23/uFun-3/ "基于uFUN开发板的心率计（一）DMA方式获取传感器数据"
+[wangchao2]:http://www.wangchaochao.top/2019/03/31/uFun-5/ "基于uFUN开发板的心率计（二）动态阈值算法获取心率值"
+[wangchao3]:http://www.wangchaochao.top/2019/04/05/uFun-6/ "基于uFUN开发板的心率计（三）Qt上位机的实现"
