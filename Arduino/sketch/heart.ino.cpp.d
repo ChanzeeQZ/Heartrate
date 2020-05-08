@@ -1,5 +1,5 @@
-C:\zhangQianZhe\Git_Chanzee\Heartrate\Arduino\sketch\heartrate.ino.cpp.o: \
- C:\zhangQianZhe\Git_Chanzee\Heartrate\Arduino\sketch\heartrate.ino.cpp \
+C:\zhangQianZhe\Git_Chanzee\Heartrate\Arduino\sketch\heart.ino.cpp.o: \
+ C:\zhangQianZhe\Git_Chanzee\Heartrate\Arduino\sketch\heart.ino.cpp \
  C:\zhangQianZhe\Arduino\arduino-1.8.12\hardware\arduino\avr\cores\arduino/Arduino.h \
  C:\zhangQianZhe\Arduino\arduino-1.8.12\hardware\arduino\avr\cores\arduino/binary.h \
  C:\zhangQianZhe\Arduino\arduino-1.8.12\hardware\arduino\avr\cores\arduino/WCharacter.h \

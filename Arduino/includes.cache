@@ -10,17 +10,17 @@
     "Includepath": "C:\\zhangQianZhe\\Arduino\\arduino-1.8.12\\hardware\\arduino\\avr\\variants\\standard"
   },
   {
-    "Sourcefile": "C:\\zhangQianZhe\\Git_Chanzee\\Heartrate\\Arduino\\sketch\\heartrate.ino.cpp",
+    "Sourcefile": "C:\\zhangQianZhe\\Git_Chanzee\\Heartrate\\Arduino\\sketch\\heart.ino.cpp",
     "Include": "Wire.h",
     "Includepath": "C:\\zhangQianZhe\\Arduino\\arduino-1.8.12\\hardware\\arduino\\avr\\libraries\\Wire\\src"
   },
   {
-    "Sourcefile": "C:\\zhangQianZhe\\Git_Chanzee\\Heartrate\\Arduino\\sketch\\heartrate.ino.cpp",
+    "Sourcefile": "C:\\zhangQianZhe\\Git_Chanzee\\Heartrate\\Arduino\\sketch\\heart.ino.cpp",
     "Include": "LiquidCrystal_I2C.h",
     "Includepath": "C:\\zhangQianZhe\\Arduino\\ARDUINO\\libraries\\LiquidCrystal_I2C"
   },
   {
-    "Sourcefile": "C:\\zhangQianZhe\\Git_Chanzee\\Heartrate\\Arduino\\sketch\\heartrate.ino.cpp",
+    "Sourcefile": "C:\\zhangQianZhe\\Git_Chanzee\\Heartrate\\Arduino\\sketch\\heart.ino.cpp",
     "Include": "",
     "Includepath": null
   },

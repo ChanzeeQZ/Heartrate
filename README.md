@@ -43,8 +43,6 @@
 3. [proteus仿真arduino中使用PCF8574以I2C方式操作LCD1602][xiHe]<br>
 4. [手指检测心跳设计——传感器制作篇][shouZhi]<br>
 5. [基于uFUN开发板的心率计（一）DMA方式获取传感器数据][wangchao1]<br>
-6. [基于uFUN开发板的心率计（二）动态阈值算法获取心率值][wangchao2]<br>
-7. [基于uFUN开发板的心率计（三）Qt上位机的实现][wangchao3]<br>
 
 # 测量仪器设计拓展
 ## 一般结构
