@@ -9,6 +9,18 @@
             margin: 0;
             padding: 0;
         }
+        .button {
+            background-color: #4CAF50; /* Green */
+            width: 100%;
+            height: 200px;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 50px;
+        }
     </style>
   </head>
   <body>
@@ -18,10 +30,12 @@
     <canvas id="c" width="100" height="100" style="display:none"></canvas>
     <canvas id="g" width="320" height="30"></canvas><br/>
     <div id="bpm">--</div>
+    <button class="button" type="button" onclick="exportRaw('data.txt', JSON.stringify(save))">下载</button>
 
   <script>
     var video, width, height, context, graphCanvas, graphContext, bpm;
     var hist = [];
+    var save = [];
 
 /* // 老的浏览器可能根本没有实现 mediaDevices，所以我们可以先设置一个空的对象
 if (navigator.mediaDevices === undefined) {
@@ -123,6 +137,7 @@ navigator.mediaDevices.getUserMedia(audio: false, video: { facingMode: { exact: 
         }
         //console.log(sum / len);   
         hist.push({ bright : sum/len, time : Date.now() });
+        save.push(sum/len);
         while (hist.length > graphCanvas.width) hist.shift();
         // max and min
         var max = hist[0].bright;
@@ -137,6 +152,7 @@ navigator.mediaDevices.getUserMedia(audio: false, video: { facingMode: { exact: 
         var lo = min*0.6 + max*0.4;
         var hi = min*0.4 + max*0.6;
         var pulseAvr = 0, pulseCnt = 0;
+
         // draw
         var ctx = graphContext;
         ctx.clearRect(0, 0, graphCanvas.width, graphCanvas.height);
@@ -180,6 +196,22 @@ navigator.mediaDevices.getUserMedia(audio: false, video: { facingMode: { exact: 
   }
 
         addEventListener("DOMContentLoaded", initialize);
+
+    function fakeClick(obj) {
+        var ev = document.createEvent("MouseEvents");
+        ev.initMouseEvent("click", true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        obj.dispatchEvent(ev);
+}
+
+    function exportRaw(name, data) {
+        var urlObject = window.URL || window.webkitURL || window;
+        var export_blob = new Blob([data]);
+        var save_link = document.createElementNS("http://www.w3.org/1999/xhtml", "a")
+        save_link.href = urlObject.createObjectURL(export_blob);
+    save_link.download = name;
+    fakeClick(save_link);
+}
+
   </script>
   </body>
 </html>
