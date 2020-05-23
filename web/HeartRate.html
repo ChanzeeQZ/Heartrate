@@ -8,11 +8,15 @@
         * {
             margin: 0;
             padding: 0;
+            background-color:black;
+        }
+        .f {
+            color:rgb(26, 100, 29);
         }
         .button {
-            background-color: #4CAF50; /* Green */
+            background-color: rgb(26, 100, 29); /* Green */
             width: 100%;
-            height: 200px;
+            height: 100px;
             border: none;
             color: white;
             padding: 15px 32px;
@@ -24,41 +28,22 @@
     </style>
   </head>
   <body>
-    <div>经实验某些型号手机摄像头无法调用。</div> 
-    <div>允许该网站使用您的网络摄像头，然后将手指轻轻放在摄像头上，等待轨迹稳定。</div>
-    <div>当手指后面有光时，可以更好的检测。</div>
-    <video id="v" width="100" height="100" style="display:none" muted></video>
-    <canvas id="c" width="100" height="100" style="display:none"></canvas>
-    <canvas id="g" width="320" height="30"></canvas><br/>
-    <div id="bpm">--</div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="f">经实验某些型号手机摄像头无法调用。</div> 
+    <div class="f">允许该网站使用您的网络摄像头，然后将手指轻轻放在摄像头上，等待轨迹稳定。</div>
+    <div class="f">当手指后面有光时，可以更好的检测。</div>
+    <br /><br />
+        <video id="v" width="100" height="100"  muted></video>
+        <canvas id="c" width="100" height="100" style="display: none;"></canvas>
+        <canvas id="g" width="320" height="100"style="background: #1a641d;"></canvas><br/>
+    <div class="f" id="bpm">--</div>
+    <br /><br /><br />
     <button class="button" type="button" onclick="exportRaw('data.txt', JSON.stringify(save))">下载</button>
 
   <script>
     var video, width, height, context, graphCanvas, graphContext, bpm;
     var hist = [];
     var save = [];
-
-/* // 老的浏览器可能根本没有实现 mediaDevices，所以我们可以先设置一个空的对象
-if (navigator.mediaDevices === undefined) {
-  navigator.mediaDevices = {};
-}
-// 一些浏览器部分支持 mediaDevices。我们不能直接给对象设置 getUserMedia 
-// 因为这样可能会覆盖已有的属性。这里我们只会在没有getUserMedia属性的时候添加它。
-if (navigator.mediaDevices.getUserMedia === undefined) {
-  navigator.mediaDevices.getUserMedia = function(constraints) {
-    // 首先，如果有getUserMedia的话，就获得它
-    var getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
-    // 一些浏览器根本没实现它 - 那么就返回一个error到promise的reject来保持一个统一的接口
-    if (!getUserMedia) {
-      return Promise.reject(new Error('getUserMedia is not implemented in this browser'));
-    }
-    // 否则，为老的navigator.getUserMedia方法包裹一个Promise
-    return new Promise(function(resolve, reject) {
-      getUserMedia.call(navigator, constraints, resolve, reject);
-    });
-  }
-}
-navigator.mediaDevices.getUserMedia(audio: false, video: { facingMode: { exact: "environment" } })*/
 
     navigator.mediaDevices.getUserMedia = navigator.mediaDevices.getUserMedia || navigator.webkitGetUserMedia;
     var constraints = {audio: false, video: { facingMode: { exact: "environment" } } };
@@ -86,18 +71,22 @@ navigator.mediaDevices.getUserMedia(audio: false, video: { facingMode: { exact: 
         width = video.width;
         height = video.height;
 
-        // The target canvas.
+        // The target canvas.目标画布。
         var canvas = document.getElementById("c");
         context = canvas.getContext("2d");
+        //context.fillStyle = "#0000ff"
+        //context.fillRect(0,0,150,75);
 
-        // The canvas for the graph
+        // The canvas for the graph 图形的画布
         graphCanvas = document.getElementById("g");
         graphContext = graphCanvas.getContext("2d");
+        //graphContext.fillStyle = "#00ffff"
+        //graphContext.fillRect(0,0,150,75);
  
-        // The bpm meter
+        // The bpm meter bpm 计
         bpm = document.getElementById("bpm");
     
-        // Get the webcam's stream.
+        // Get the webcam's stream. 获取网络摄像头的流。
         navigator.getUserMedia(constraints, startStream, function () {});
     }
 
