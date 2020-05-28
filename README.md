@@ -20,11 +20,18 @@
 |显示：|LCD1602|
 |I2C：|PCF8574|
 # 参考
-1. [Pulse sersor][sersor]<br>
-2. [TINKERCAD][tinkercad]<br>
-3. [proteus仿真arduino中使用PCF8574以I2C方式操作LCD1602][xiHe]<br>
-4. [手指检测心跳设计——传感器制作篇][shouZhi]<br>
-5. [基于uFUN开发板的心率计（一）DMA方式获取传感器数据][wangchao1]<br>
+[Pulse sersor][sersor]<br>
+[TINKERCAD][tinkercad]<br>
+[基于摄像头的心率测量html文件][HTML]<br>
+[Analog Devices滤波器设计][Analog Devices]<br>
+[proteus仿真arduino中使用PCF8574以I2C方式操作LCD1602][xiHe]<br>
+[Arduino中断][attachinterrupt]<br>
+[手指检测心跳设计——传感器制作篇][shouZhi]<br>
+[基于uFUN开发板的心率计（一）DMA方式获取传感器数据][wangchao1]<br>
+[绿or红？心率监测使用哪种光比较好？][绿or红]<br>
+[脉搏波速度(PWV)分析][脉搏波速度(PWV)分析]<br>
+[典型四款直流稳压电路原理][典型四款直流稳压电路原理]<br>
+[巴特沃斯滤波器设计][巴特沃斯滤波器设计]<br>
 
 # F.1 测量仪器设计拓展
 ## F.1.1 一般结构
@@ -46,9 +53,8 @@
 
 
 
-
-[photodiode]:"https://zh.wikipedia.org/wiki/%E5%85%89%E7%94%B5%E4%BA%8C%E6%9E%81%E7%AE%A1 "光电二极管"
-[PPG]:https://www.cdstm.cn/gallery/media/mkjx/wxd/201605/t20160525_321684.html "光电容积法"
+[HTML]:https://github.com/gfwilliams/HeartRate"
+[PPG]:[https://www.cdstm.cn/gallery/media/mkjx/wxd/201605/t20160525_321684.html "光电容积法"
 [sersor]:https://pulsesensor.com/ "光电传感器模块"
 [tinkercad]:https://www.tinkercad.com/ "Arduino仿真"
 [xiHe]:https://blog.csdn.net/haigear/article/details/88935697 "proteus仿真arduino中使用PCF8574以I2C方式操作LCD1602"
@@ -57,3 +63,8 @@
 [wangchao2]:http://www.wangchaochao.top/2019/03/31/uFun-5/ "基于uFUN开发板的心率计（二）动态阈值算法获取心率值"
 [wangchao3]:http://www.wangchaochao.top/2019/04/05/uFun-6/ "基于uFUN开发板的心率计（三）Qt上位机的实现"
 [attachinterrupt]:https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/ "attachinterrupt"
+[Analog Devices]:https://www.analog.com/cn/design-center/design-tools-and-calculators.html
+[绿or红]:https://zhuanlan.zhihu.com/p/29314838
+[脉搏波速度(PWV)分析]:http://www.vital-scan.cn/dtr_pwv_overview_cn.htm
+[典型四款直流稳压电路原理]:https://www.eefocus.com/analog-power/411020
+[巴特沃斯滤波器设计]:http://www.tastones.com/tutorial/filters/butterworth-filters/
