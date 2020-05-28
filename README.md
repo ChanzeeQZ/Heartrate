@@ -20,18 +20,28 @@
 |显示：|LCD1602|
 |I2C：|PCF8574|
 # 参考
-[Pulse sersor][sersor]<br>
-[TINKERCAD][tinkercad]<br>
-[基于摄像头的心率测量html文件][HTML]<br>
-[Analog Devices滤波器设计][Analog Devices]<br>
-[proteus仿真arduino中使用PCF8574以I2C方式操作LCD1602][xiHe]<br>
-[Arduino中断][attachinterrupt]<br>
-[手指检测心跳设计——传感器制作篇][shouZhi]<br>
-[基于uFUN开发板的心率计（一）DMA方式获取传感器数据][wangchao1]<br>
-[绿or红？心率监测使用哪种光比较好？][绿or红]<br>
-[脉搏波速度(PWV)分析][脉搏波速度(PWV)分析]<br>
-[典型四款直流稳压电路原理][典型四款直流稳压电路原理]<br>
-[巴特沃斯滤波器设计][巴特沃斯滤波器设计]<br>
+1. [Pulse sersor][sersor]<br>
+2. [TINKERCAD][tinkercad]<br>
+3. [基于摄像头的心率测量html文件][HTML]<br>
+4. [Analog Devices滤波器设计][Analog Devices]<br>
+5. [proteus仿真arduino中使用PCF8574以I2C方式操作LCD1602][xiHe]<br>
+6. [Arduino中断][attachinterrupt]<br>
+7. [手指检测心跳设计——传感器制作篇][shouZhi]<br>
+8. [基于uFUN开发板的心率计（一）DMA方式获取传感器数据][wangchao1]<br>
+9. [绿or红？心率监测使用哪种光比较好？][绿or红]<br>
+10. [脉搏波速度(PWV)分析][脉搏波速度(PWV)分析]<br>
+11. [典型四款直流稳压电路原理][典型四款直流稳压电路原理]<br>
+12. [巴特沃斯滤波器设计][巴特沃斯滤波器设计]<br>
+13. [50Hz陷波器电路][50Hz陷波器电路]<br>
+14. [XD-58C pulsesensor光学心率脉搏生物模拟传感器][XD-58C pulsesensor光学心率脉搏生物模拟传感器]  
+15. [单片机脉搏体温检测仪的Proteus仿真设计与调试][单片机脉搏体温检测仪的Proteus仿真设计与调试]  
+16. [proteus仿真arduino中使用PCF8574以I2C方式操作LCD1602][proteus仿真arduino中使用PCF8574以I2C方式操作LCD1602]  
+17. [光电容积脉搏波的临床应用研究及进展][光电容积脉搏波的临床应用研究及进展]  
+18. [一个基于光电容积法监测心率、血压的方案][一个基于光电容积法监测心率、血压的方案]  
+19. [光学心率感测设计的系统集成考量][光学心率感测设计的系统集成考量]  
+20. [用Arduino平台设计和制作的简易频率计][用Arduino平台设计和制作的简易频率计]  
+21. [最简单的Arduino频率计][最简单的Arduino频率计]  
+
 
 # F.1 测量仪器设计拓展
 ## F.1.1 一般结构
@@ -53,7 +63,7 @@
 
 
 
-[HTML]:https://github.com/gfwilliams/HeartRate"
+[HTML]:https://github.com/gfwilliams/HeartRate
 [PPG]:[https://www.cdstm.cn/gallery/media/mkjx/wxd/201605/t20160525_321684.html "光电容积法"
 [sersor]:https://pulsesensor.com/ "光电传感器模块"
 [tinkercad]:https://www.tinkercad.com/ "Arduino仿真"
@@ -68,3 +78,12 @@
 [脉搏波速度(PWV)分析]:http://www.vital-scan.cn/dtr_pwv_overview_cn.htm
 [典型四款直流稳压电路原理]:https://www.eefocus.com/analog-power/411020
 [巴特沃斯滤波器设计]:http://www.tastones.com/tutorial/filters/butterworth-filters/
+[50Hz陷波器电路]:https://bbs.21ic.com/icview-1066964-1-1.html
+[XD-58C pulsesensor光学心率脉搏生物模拟传感器]:https://www.arduino.cn/thread-91245-1-1.html
+[单片机脉搏体温检测仪的Proteus仿真设计与调试]:http://www.51hei.com/bbs/dpj-149280-1.html
+[proteus仿真arduino中使用PCF8574以I2C方式操作LCD1602]:https://blog.csdn.net/haigear/article/details/88935697
+[光电容积脉搏波的临床应用研究及进展]:http://www.maibobo.cn/533.html
+[一个基于光电容积法监测心率、血压的方案]:http://bbs.elecfans.com/jishu_1540138_1_1.html
+[光学心率感测设计的系统集成考量]:https://www.silabs.com/community/chinese-blog.entry.html/2018/03/19/_-THeN
+[用Arduino平台设计和制作的简易频率计]:https://www.cnblogs.com/chaodakc/articles/5641444.html
+[最简单的Arduino频率计]:https://www.geek-workshop.com/thread-3085-1-8.html
